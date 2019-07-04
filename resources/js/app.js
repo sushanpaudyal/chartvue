@@ -21,6 +21,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('add-product-component', require('./components/AddProductComponent').default);
+Vue.component('chart-component', require('./components/ChartComponent').default);
 
 
 /**
