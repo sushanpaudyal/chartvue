@@ -14,28 +14,9 @@
                         </div>
                     @endif
 
-                        <form action="">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" class="form-control">
-                            </div>
 
-                            <div class="form-group">
-                                <label for="year">Year</label>
-                                <input type="number" id="year" class="form-control">
-                            </div>
+                    <add-product-component></add-product-component>
 
-                            <div class="form-group">
-                                <label for="price">Price</label>
-                                <input type="text" id="price" class="form-control">
-                            </div>
-
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Create Product</button>
-                            </div>
-
-
-                        </form>
                 </div>
             </div>
         </div>
