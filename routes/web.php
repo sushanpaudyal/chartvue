@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/products', 'ProductControllr@index')->name('product.index');
+Route::post('/products', 'ProductControllr@store')->name('product.store');
