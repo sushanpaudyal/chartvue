@@ -1778,8 +1778,23 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     getProducts: function getProducts() {
+      var _this = this;
+
       axios.get(this.url).then(function (response) {
-        console.log(response.data);
+        // console.log(response.data)
+        _this.data = response.data;
+
+        if (_this.data) {
+          _this.data.forEach(function (element) {
+            _this.years.push(element.year);
+
+            _this.labels.push(element.name);
+
+            _this.prices.push(element.price);
+          });
+        }
+
+        console.log(_this.labels);
       });
     }
   },

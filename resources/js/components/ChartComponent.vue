@@ -14,8 +14,17 @@
         methods: {
           getProducts(){
               axios.get(this.url).then((response) => {
-                 console.log(response.data)
+                 // console.log(response.data)
+                  this.data = response.data;
+                  if(this.data){
+                      this.data.forEach(element => {
+                         this.years.push(element.year);
+                          this.labels.push(element.name);
+                          this.prices.push(element.price);
 
+                      });
+                  }
+                  console.log(this.labels)
               });
           }
         },
