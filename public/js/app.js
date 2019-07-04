@@ -1776,8 +1776,15 @@ __webpack_require__.r(__webpack_exports__);
       data: ''
     };
   },
+  methods: {
+    getProducts: function getProducts() {
+      axios.get(this.url).then(function (response) {
+        console.log(response.data);
+      });
+    }
+  },
   mounted: function mounted() {
-    console.log('Component mounted.');
+    this.getProducts();
   }
 });
 
